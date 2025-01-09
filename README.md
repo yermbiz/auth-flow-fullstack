@@ -1,5 +1,8 @@
 # auth-flow-fullstack
 
+### Registration Flow
+![Registration Flow](screenshots/registration-flow.png)
+
 ## Overview
 
 This project demonstrates a full-stack implementation of user registration and login functionality, incorporating both:
@@ -42,6 +45,20 @@ Each part is a standalone project with its own dependencies, scripts, and can be
     - Minimal and structured logging in production for performance and monitoring.
     - Debugging logs enabled for testing.
    
+## Screenshots
+
+### Landing Page
+![Landing Page](screenshots/landing.png)
+
+### Register Page
+![Register Page](screenshots/register.png)
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
 #### Logging
 
 The logging system in this project is implemented using **Winston**, providing robust and environment-specific logging. The configuration ensures clear and structured logs during development and efficient file-based logging in production.
