@@ -1,8 +1,5 @@
 # auth-flow-fullstack
 
-### Registration Flow
-![Registration Flow](screenshots/registration-flow.png)
-
 ## Overview
 
 This project demonstrates a full-stack implementation of user registration and login functionality, incorporating both:
@@ -14,12 +11,17 @@ This project demonstrates a full-stack implementation of user registration and l
    - Supports account registration with email confirmation via a link.
    - Includes a password recovery flow for users who forget their password.
 
+3. **Policy Versioning**
+   - Dynamically loads the latest versions of Terms and Conditions or Privacy Policies.
+   - Policy content is securely stored on the backend, allowing centralized updates and version control.
+
 The project is split into two independent parts:
 
 - **Frontend**: A React application using Material-UI (MUI).
 - **Backend**: A Node.js application using Express, Knex, and PostgreSQL.
 
 Each part is a standalone project with its own dependencies, scripts, and can be separated into individual repositories if needed.
+
 
 ---
 
@@ -44,6 +46,10 @@ Each part is a standalone project with its own dependencies, scripts, and can be
     - Verbose logging in development.
     - Minimal and structured logging in production for performance and monitoring.
     - Debugging logs enabled for testing.
+- **Policy Versioning**:
+  - The application dynamically loads the latest versions of Terms and Conditions or Privacy Policies.
+  - Policy content is securely stored on the backend, enabling centralized updates and version control.
+
    
 ## Screenshots
 
@@ -354,6 +360,7 @@ PASSWORD_COMPLEXITY="complex"
 ## Known Limitations
 - Deployment configurations (e.g., CI/CD pipelines) are not included in this repository.
 - API documentation is currently missing, which may make understanding the available endpoints less intuitive. This will be addressed in future updates.
+- Policy version history is not currently displayed to users. Only the latest version is accessible.
 
 ## TODO
 - [ ] Add Swagger/OpenAPI-based documentation for all backend endpoints.
